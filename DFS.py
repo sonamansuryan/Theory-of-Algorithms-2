@@ -20,7 +20,7 @@ visited = set()
 def dfs(graph, node, visited, parent=None):
     if node not in visited:
         visited.add(node)
-        print(f"Այցելվում է հանգույց՝ {node}:")
+        print(f"Visiting node {node}")
 
         is_dead_end = True
         for neighbor in graph[node]:
@@ -29,10 +29,10 @@ def dfs(graph, node, visited, parent=None):
                 dfs(graph, neighbor, visited, node)
 
         if len(graph[node]) == 0:
-            print(f"Հանգույց {node}-ը տերև է:")
+            print(f"Node {node} is a leaf node")
 
         elif is_dead_end and parent is not None:
-            print(f"Հանգույց {node}-ը փակուղի է:")
+            print(f"Node {node} is a dead-end node")
 
 
 dfs(graph, 0, visited)
