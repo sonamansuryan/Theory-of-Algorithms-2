@@ -1,14 +1,4 @@
 def bfs(graph, start_node):
-    """
-        Implements Breadth-First Search (BFS) algorithm on a graph
-
-        Parameters:
-        graph: dictionary where keys are nodes and values are lists of adjacent nodes
-        start_node: starting node for the search
-
-        Returns:
-        list of visited nodes in BFS order
-    """
 
     queue = []
 
@@ -32,13 +22,20 @@ def bfs(graph, start_node):
     return visit_order
 
 graph = {
-    'A': ['B', 'C'],
-    'B': ['A', 'D'],
-    'C': ['A', 'D', 'E'],
-    'D': ['B', 'C'],
-    'E': ['C', 'F'],
-    'F': ['E']
+    0: [11, 7, 9],
+    9: [10, 8],
+    7: [11, 6, 3],
+    10: [1],
+    8: [1, 12],
+    6: [5],
+    3: [2, 4],
+    12: [2],
+    11: [],
+    5: [],
+    2: [],
+    4: [],
+    1: []
 }
 
-result = bfs(graph, 'A')
-print("BFS այցելման հերթականություն սկսած 'A'-ից:", result)
+result = bfs(graph, 0)
+print("BFS այցելման հերթականություն սկսած '0'-ից:", result)
