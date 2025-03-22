@@ -38,4 +38,4 @@ graph = {
 }
 
 result = bfs(graph, 0)
-print("BFS այցելման հերթականություն սկսած '0'-ից:", result)
+print("BFS այցելման հերթականությունը սկսած '0'-ից:", result)
