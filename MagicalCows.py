@@ -16,7 +16,7 @@ def magical_cows_queries(C: int, N: int, cows: list[int], queries: list[int]):
 
     for m in queries:
         total_farms = sum(dp[m].values())
-        print(f"\nՕր {m}: {total_farms} ֆերմա")
+        print(f"\n Օր {m}: {total_farms} ֆերմա")
 
 C = int(input("Մուտքագրիր առավելագույն կովերի քանակը մեկ ֆերմայում (C): "))
 N = int(input("Մուտքագրիր նախնական ֆերմաների քանակը (N): "))
