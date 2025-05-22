@@ -31,7 +31,7 @@ def Bellman_Ford(graph, vertex, start):
 
     for u, v, w in graph:
         if distance[u] != float('infinity') and distance[u] + w < distance[v]:
-            return "The Graph contains a negative cycle"
+            return "The Graph_1 contains a negative cycle"
 
     return distance, previous
 

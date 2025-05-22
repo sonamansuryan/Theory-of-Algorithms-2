@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+pip-wheel-metadata/
+
+# PyCharm
+.idea/
+
+# VSCode (եթե երբևէ օգտագործես)
+.vscode/
+
+# Jupyter Notebooks checkpoint files (եթե օգտագործես nb)
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db

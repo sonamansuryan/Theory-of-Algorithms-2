@@ -26,6 +26,4 @@ dungeon = [
     [10, 30, -5]
 ]
 
-print(calculateMinimumHP(dungeon))  
-
-
+print(calculateMinimumHP(dungeon))
