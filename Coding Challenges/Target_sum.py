@@ -7,15 +7,12 @@ def findTargetSumWays(nums, target):
                 result.append(expression)
             return
 
-        # '+nums[i]' դնել
         dfs(i + 1, total + nums[i], expression + ['+' + str(nums[i])])
 
-        # '-nums[i]' դնել
         dfs(i + 1, total - nums[i], expression + ['-' + str(nums[i])])
 
     dfs(0, 0, [])
 
-    # Տպել արդյունքը
     print("Հնարավոր տարբերակների քանակը:", len(result))
     print("Տարբերակները, որոնց դեպքում ստացվում է", target, "՝")
     for expr in result:
